@@ -1,0 +1,31 @@
+<div class="pokedex__screen__container">
+    <div class="pokdex__screen__container__toplights">
+        <div class="pokdex__screen__container__toplights__light"></div>
+        <div class="pokdex__screen__container__toplights__light"></div>
+    </div>
+    <div class="pokdex__screen__container__screen">
+        <div class="pokedex__screen_container__screen__display">
+            <!-- display content-->
+            <div class="display__pokemon__info">
+                <div class="display__pokemon__image">
+                    <img src="{{ pokemon.sprites.front_default }}" class="pokemon__img">
+                </div>
+                <div class="display__pokemon__types">
+                    <p>TYPES</p>
+                    <ul>
+                        <li *ngFor="let type of pokemon.types">{{ type.type.name }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="display__pokemon__stats">
+                <p *ngFor="let stat of pokemon.stats">
+                    {{ stat.stat.name }}: {{ stat.base_stat }}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="pokdex__screen__container__bottomelements">
+        <div class="pokdex__screen__container__bottomelements__ligth"></div>
+        <div class="pokdex__screen__container__bottomelements__speaker"></div>
+    </div>
+</div>

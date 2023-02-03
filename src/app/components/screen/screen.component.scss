@@ -1,0 +1,100 @@
+.pokedex__screen__container {
+    width: 270px;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 7px 7px 7px 30px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 6px 1px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+  }
+  
+  .pokdex__screen__container__toplights {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pokdex__screen__container__toplights__light {
+    position: relative;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    margin-right: 30px;
+    background: radial-gradient(
+      closest-corner at 3px 3px,
+      #fcb9b9 5%,
+      #f00000 70%,
+      #a00000 100%
+    );
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .pokdex__screen__container__screen {
+    width: 100%;
+  }
+  
+  .pokedex__screen_container__screen__display {
+    padding: 5px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, .7);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(7, 12, 4, 0.8);
+    box-shadow: inset 4px 6px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+  }
+
+  .display__pokemon__info {
+    font-size: 10px;
+  }
+
+  .display__pokemon__stats {
+    font-size: 8px;
+    // background-color: purple;
+  }
+  
+  .pokdex__screen__container__bottomelements {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pokdex__screen__container__bottomelements__ligth {
+      position: relative;
+      left: 30px;
+      width: 15px;
+      height: 15px;
+      background: radial-gradient(
+      closest-corner at 4px 4px,
+      #fcb9b9 5%,
+      #ff1616 70%,
+      #b10000 100%
+    );
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .pokdex__screen__container__bottomelements__speaker {
+      position: relative;
+      right: 27px;
+      width: 30px;
+      height: 25px;
+      background-image: repeating-linear-gradient(
+          rgb(235, 235, 235) 2px,
+          rgb(235, 235, 235) 4px,
+          black 6px,
+          black 5px,
+       
+      )
+  }
