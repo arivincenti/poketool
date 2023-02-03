@@ -14,21 +14,22 @@
   display: flex;
 }
 
-.pokedex__header__lights__biglight {
+.pokedex__header__lights__bigLight {
   margin-right: 20px;
   width: 60px;
   height: 60px;
   background: radial-gradient(
     closest-corner at 20px 20px,
     #ffffff 10%,
-    #0081b8 100%
+    #3396c1 40%,
+    #00405b 100%
   );
   border-radius: 50%;
   border: 3px solid white;
   box-shadow: 1px 6px 4px rgba(0, 0, 0, 0.7);
 }
 
-.pokedex__header__lights__smalllight {
+.pokedex__header__lights__smallLight {
   margin-top: 3px;
   margin-right: 8px;
   width: 12px;
@@ -38,7 +39,7 @@
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
-.pokedex__header__lights__smalllight--red {
+.pokedex__header__lights__smallLight--red {
   background: radial-gradient(
     closest-corner at 4px 4px,
     #ffffff 10%,
@@ -46,7 +47,7 @@
   );
 }
 
-.pokedex__header__lights__smalllight--yellow {
+.pokedex__header__lights__smallLight--yellow {
   background: radial-gradient(
     closest-corner at 4px 4px,
     #ffffff 10%,
@@ -54,7 +55,7 @@
   );
 }
 
-.pokedex__header__lights__smalllight--green {
+.pokedex__header__lights__smallLight--green {
   background: radial-gradient(
     closest-corner at 4px 4px,
     #ffffff 10%,
@@ -90,6 +91,20 @@
 
 .pokdex__screen__container__toplights {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokdex__screen__container__toplights__light {
+  position: relative;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  background-color: crimson;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 .pokdex__screen__container__screen {
@@ -106,6 +121,7 @@
 
 .pokdex__screen__container__bottomelements {
   width: 100%;
+  background-color: yellow;
 }
 
 // end of pokedex screen
