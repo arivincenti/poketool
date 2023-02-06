@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pad-buttons',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./pad-buttons.component.scss']
 })
 export class PadButtonsComponent {
-
+@Input() pokemonName: any;
+  constructor(){
+  }
 }

@@ -3,6 +3,7 @@
     height: 220px;
     margin: 0 auto;
     margin-top: 20px;
+    padding: 5px;
     background-color: rgb(235, 235, 235);
     border-radius: 7px 7px 7px 30px;
     border: 2px solid rgba(0, 0, 0, 0.8);
@@ -37,29 +38,50 @@
   
   .pokdex__screen__container__screen {
     width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
   }
   
   .pokedex__screen_container__screen__display {
     padding: 5px;
     box-sizing: border-box;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(19, 19, 19, 0.6);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     width: 80%;
     height: 100%;
-    background-color: rgba(7, 12, 4, 0.8);
+    background-color: rgb(87, 150, 74);
     box-shadow: inset 4px 6px 1px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
   }
 
   .display__pokemon__info {
-    font-size: 10px;
+    display: grid;
+    grid-template-areas: 'display__pokemon__image',
+    'display__pokemon__types';
+    font-size: 8px;
+    grid-template-rows: 90px 60px;
+  }
+
+.pokemon__img {
+    max-width: 100px;
+    filter: saturate(.7);
+  }
+
+  .display__pokemon__types {
+    box-sizing: border-box;
+    padding: 4px;
   }
 
   .display__pokemon__stats {
-    font-size: 8px;
-    // background-color: purple;
+    position: relative;
+    left: 8px;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
   }
   
   .pokdex__screen__container__bottomelements {

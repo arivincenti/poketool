@@ -4,6 +4,7 @@ import { ScreenComponent } from './screen/screen.component';
 import { HeaderLightsComponent } from './header-lights/header-lights.component';
 import { PadButtonsComponent } from './pad-buttons/pad-buttons.component';
 import { ScreenService } from './screen/services/screen.service';
+import { StatsPipe } from './screen/pipes/stats.pipe';
 
 
 
@@ -11,7 +12,8 @@ import { ScreenService } from './screen/services/screen.service';
   declarations: [
     ScreenComponent,
     HeaderLightsComponent,
-    PadButtonsComponent
+    PadButtonsComponent,
+    StatsPipe
   ],
   imports: [
     CommonModule

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ScreenService } from './services/screen.service';
+import { POKEMON_MOCK} from '../../shared/mocks/pokemon-response.mock'
 
 @Component({
   selector: 'app-screen',
@@ -7,11 +8,12 @@ import { ScreenService } from './services/screen.service';
   styleUrls: ['./screen.component.scss']
 })
 export class ScreenComponent implements OnInit {
-
-  pokemon: any;
+@Input() pokemon: any;
+  
   constructor(private readonly screenService: ScreenService){}
 
   ngOnInit(): void {
+    // this.pokemon = POKEMON_MOCK;
     this.screenService.getPokemonInfo(6).subscribe(res => {
       this.pokemon = res;
     })
